@@ -98,7 +98,6 @@ public:
 * 🏆 CodeChef
 * 🚀 GitHub
 
-(Add your profile links here.)
 
 ---
 
