@@ -66,7 +66,7 @@ My foundation is rooted in **C++ and Java**, which anchor my analytical problem-
 
 class Developer {
 public:
-    std::string name     = "Nilesh";
+    std::string name     = "Nilesh Kumar Patel";
     std::string role     = "B.Tech CSE (Data Science) Student";
     std::vector<std::string> coreLanguages = {"C++", "Java", "Python", "TypeScript", "SQL"};
     std::vector<std::string> activeFocus   = {"Full-Stack Web & Mobile", "DSA", "AI/ML"};
