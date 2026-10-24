@@ -1,0 +1,44 @@
+name: Update Activity SVGs
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "assets/**"
+      - "README.md"
+      - ".github/workflows/**"
+
+permissions:
+  contents: write
+
+jobs:
+  update-svgs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create assets directory
+        run: mkdir -p assets
+
+      - name: Download latest Streak Stats and Contribution Graph
+        run: |
+          TIMESTAMP=$(date +%s)
+          curl -f -s "https://streak-stats.demolab.com?user=bitsbynilesh&background=FFFAF3&border=E9DCC9&stroke=E9DCC9&ring=D97757&fire=E0A458&currStreakNum=3D2E24&sideNums=3D2E24&currStreakLabel=D97757&sideLabels=8B7462&dates=A08A78&border_radius=16&t=${TIMESTAMP}" -o assets/streak-stats.svg || true
+          curl -f -s "https://ghchart.rshah.org/D97757/bitsbynilesh?t=${TIMESTAMP}" -o assets/contribution-graph.svg || true
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/streak-stats.svg assets/contribution-graph.svg
+          if git diff --staged --quiet; then
+            echo "No changes in activity SVGs"
+          else
+            git commit -m "chore(activity): update live activity SVGs [skip ci]"
+            git push origin main
+          fi

@@ -255,11 +255,11 @@ A cross-platform mobile skin-health tracking application designed for proactive 
 
 <div align="center">
 
-<img src="https://ghchart.rshah.org/D97757/bitsbynilesh" width="100%" alt="Contribution graph" />
+<img src="./assets/contribution-graph.svg" width="100%" alt="Contribution graph" />
 
 <br><br>
 
-<img src="https://streak-stats.demolab.com?user=bitsbynilesh&background=FFFAF3&border=E9DCC9&stroke=E9DCC9&ring=D97757&fire=E0A458&currStreakNum=3D2E24&sideNums=3D2E24&currStreakLabel=D97757&sideLabels=8B7462&dates=A08A78&border_radius=16" alt="Contribution streak" />
+<img src="./assets/streak-stats.svg" alt="Contribution streak" />
 
 </div>
 
