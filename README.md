@@ -12,7 +12,7 @@
   <a href="https://www.hackerrank.com/profile/2k25csds2513033"><img src="https://img.shields.io/badge/HackerRank-8AA37B?style=for-the-badge&logo=hackerrank&logoColor=FFFAF3" alt="HackerRank" /></a>
   <a href="mailto:nileshpatel6306@gmail.com"><img src="https://img.shields.io/badge/Email-D97757?style=for-the-badge&logo=gmail&logoColor=FFFAF3" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/bitsbynilesh"><img src="https://img.shields.io/badge/LinkedIn-E0A458?style=for-the-badge&logo=linkedin&logoColor=FFFAF3" alt="LinkedIn" /></a>
-  <a href="https://github.com/bitsbynilesh?tab=followers"><img src="https://img.shields.io/github/followers/bitsbynilesh?style=for-the-badge&label=Follow&labelColor=F4EBDD&color=D97757" alt="Followers" /></a>
+  <a href="https://github.com/bitsbynilesh?tab=followers"><img src="https://img.shields.io/github/followers/bitsbynilesh?style=for-the-badge&label=Followers&labelColor=F4EBDD&color=D97757" alt="Followers" /></a>
 </p>
 
 <p>
